@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>JS Calculator Project </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="hbox">
+    <div class="d-flex align-content-center flex-column">
+        <div>
+            <div class="mb-3 ">
+                <label for="calculate" class="form-label font-monospace d-flex align-items-center gap-1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-calculator">
+                        <rect width="16" height="20" x="4" y="2" rx="2" />
+                        <line x1="8" x2="16" y1="6" y2="6" />
+                        <line x1="16" x2="16" y1="14" y2="18" />
+                        <path d="M16 10h.01" />
+                        <path d="M12 10h.01" />
+                        <path d="M8 10h.01" />
+                        <path d="M12 14h.01" />
+                        <path d="M8 14h.01" />
+                        <path d="M12 18h.01" />
+                        <path d="M8 18h.01" />
+                    </svg>
+                    Simple Calculator</label>
+                <div class="d-flex gap-2 ">
+                    <input type="text" class="form-control" id="calculate" placeholder="">
+                    <button class="btn btn-outline-dark px-2" id="backspace">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-corner-up-left">
+                            <polyline points="9 14 4 9 9 4" />
+                            <path d="M20 20v-7a4 4 0 0 0-4-4H4" />
+                        </svg>
+
+                    </button>
+                    <button class="btn btn-outline-secondary px-2" id="clear">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+                            class="lucide lucide-eraser">
+                            <path
+                                d="m7 21-4.3-4.3c-1-1-1-2.5 0-3.4l9.6-9.6c1-1 2.5-1 3.4 0l5.6 5.6c1 1 1 2.5 0 3.4L13 21" />
+                            <path d="M22 21H7" />
+                            <path d="m5 11 9 9" />
+                        </svg>
+
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="w-100  d-flex align-content-center">
+
+            <div class="">
+                <div class="row m-0 p-0">
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">1</button
+                            class="btn btn-outline-primary">
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">2</button
+                            class="btn btn-outline-primary">
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">3</button
+                            class="btn btn-outline-primary">
+                    </div>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">4</button
+                            class="btn btn-outline-primary">
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">5</button
+                            class="btn btn-outline-primary">
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">6</button
+                            class="btn btn-outline-primary">
+                    </div>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">7</button
+                            class="btn btn-outline-primary">
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">8</button
+                            class="btn btn-outline-primary">
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">9</button
+                            class="btn btn-outline-primary">
+                    </div>
+                </div>
+                <div class="row m-0 p-0">
+                    <div class="col p-1 m-0  "><button class="btn btn-outline-primary px-2" id="mod">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-percent">
+                                <line x1="19" x2="5" y1="5" y2="19" />
+                                <circle cx="6.5" cy="6.5" r="2.5" />
+                                <circle cx="17.5" cy="17.5" r="2.5" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary">0</button>
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary px-2" id="divi">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-divide ">
+                                <circle cx="12" cy="6" r="1" />
+                                <line x1="5" x2="19" y1="12" y2="12" />
+                                <circle cx="12" cy="18" r="1" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+            <div>
+                <div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary p-1" id="add">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-plus m-1">
+                                <path d="M5 12h14" />
+                                <path d="M12 5v14" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary p-1" id="sub">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide lucide-minus m-1">
+                                <path d="M5 12h14" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary p-1" id="mul">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"
+                                stroke-linejoin="round" class="m-1">
+                                <path d="M18 6 6 18" />
+                                <path d="m6 6 12 12" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="col p-1 m-0 "><button class="btn btn-outline-primary p-1" id="equal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="lucide m-1 lucide-equal">
+                                <line x1="5" x2="19" y1="9" y2="9" />
+                                <line x1="5" x2="19" y1="15" y2="15" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
